@@ -31,7 +31,7 @@ int numB  = Convert.ToInt32(Console.ReadLine());
 DigitInDegree(numA, NaturalNumber(numB));  
 */
 // Task 27. Write program, which get number and return sum of digit of this number (123=>1+2+3=6)
-
+/*
 int Decimal(int degree)
     {
     int result = 1;
@@ -69,3 +69,5 @@ int numberDigits = CountOfDigits(number);
 int sumDigits = SumOfDigits(number, numberDigits);
 //SumOfDigits (number, numberDigits);
 Console.WriteLine($"your number have {numberDigits} digit(s). Sum of it is: {sumDigits}");
+*/
+
