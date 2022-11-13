@@ -71,3 +71,30 @@ int sumDigits = SumOfDigits(number, numberDigits);
 Console.WriteLine($"your number have {numberDigits} digit(s). Sum of it is: {sumDigits}");
 */
 
+//: Напишите программу, которая создает массив заданного пользователем размера, заполняет массив элементами от 1 до 99 и выводит их на экран.
+
+int [] CreateRandomArray(int n,int minVal,int maxVal)
+    {
+    int [] arr = new int [n];
+    for (int i=0; i<n; i++)
+    {
+        arr[i] = new Random().Next(minVal,maxVal);
+    }   
+    return arr;
+}
+//***************
+void PrintArray(int [] array)
+    {
+     Console.Write("Your  array is:[");
+    for (int i=0; i<array.Length; i++)
+    {
+        Console.Write($"{array[i]}, ");
+    }
+    Console.Write("\b\b]");
+    }
+//***************
+Console.WriteLine($"Put array size:"); 
+int size  = Convert.ToInt32(Console.ReadLine());
+int minVal = 1;
+int maxVal = 99;
+PrintArray(CreateRandomArray(size,minVal,maxVal+1));  // "+1" - так как правая граница определенна строго
